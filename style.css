@@ -412,47 +412,47 @@ header nav ul li.btn a:hover {
 
 @media (max-width: 1180px) {
     .container.banner {
-        flex-direction: column; /* Переключение на столбец */
-        align-items: center; /* Центрирование блоков */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .container.info, 
     .container.more {
-        align-items: center; /* Центрирование контента */
-        text-align: center; /* Текст выравнивается по центру */
+        align-items: center; 
+        text-align: center; 
     }
 
     .info img {
         margin-top: 20px;
-        max-width: 300px; /* Уменьшаем изображение */
+        max-width: 300px; 
     }
 
     .info p, 
     .more p {
-        font-size: 16px; /* Уменьшаем размер текста */
+        font-size: 16px; 
     }
 }
 
 @media (max-width: 768px) {
     .info h3, 
     .more h3 {
-        font-size: 24px; /* Уменьшаем заголовки */
+        font-size: 24px;
     }
 
     .info p, 
     .more p {
-        font-size: 14px; /* Ещё меньше текст */
+        font-size: 14px; 
     }
 }
 
 @media (max-width: 480px) {
     .info img {
-        max-width: 250px; /* Ещё меньше изображение */
+        max-width: 250px; 
     }
 
     .info h3, 
     .more h3 {
-        font-size: 20px; /* Уменьшаем заголовки */
+        font-size: 20px; 
     }
 }
 
