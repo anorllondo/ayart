@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color:white;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+.header-section {
+    position: relative; 
+    height: 750px; 
+    background: url('./images/logo.JPG') center/cover no-repeat; 
+    overflow: hidden; 
+}
+
+.header-section .overlay {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+
+.header-logo {
+    z-index: 2;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+}
+
+
+.AYART {
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.s-toboy {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+.container {
+    max-width: 1700px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
+    z-index: 2; 
+    position: relative;
+}
+
+
+header {
+    padding: 30px 0;
+}
+
+.music.artist {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 75px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0; 
+}
+
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #c2af9b;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #b9a494; 
+}
+
+
+header nav ul li.btn a {
+    background: rgb(80, 74, 69);
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover {
+    background: #3f3932;
+}
+
+
+@media (max-width: 1325px) {
+    header nav ul {
+        gap: 10px;
+    }
+ }
+
+@media (max-width: 1200px) {
+   header nav ul {
+        flex-direction: column; 
+   }
+}
+
+
+
+
+
+
+
+.wrapper {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(211deg, rgba(0, 0, 0, 1) 7%, rgba(31, 28, 25, 1) 100%);
+    width: 100%;
+}
+
+.hero {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 30px; 
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    text-align: center; 
+}
+
+.hero-info {
+    max-width: 100%; 
+    padding: 0 20px; 
+    font-size: 18px;
+}
+
+.hero-info h2 {
+    color: #96867c;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.hero-info h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.hero-info p {
+    font-weight: 500;
+    line-height: 1.7;
+    margin: 23px 0;
+    width: 500px;
+}
+
+.hero-info .btn {
+    background: rgb(97, 78, 57);
+    color: white;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+    font-weight: 500;
+}
+
+.hero-info .btn:hover {
+    cursor: pointer;
+    background: #726a64;
+}
+
+.single {
+    max-width: 32%; 
+    height: auto; 
+    transform: translateY(-10%);
+}
+
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .hero-info {
+        max-width: 90%; 
+    }
+
+    .single {
+        max-width: 50%; 
+        transform: translateY(0); 
+    }
+}
+
+@media (max-width: 720px) {
+    .hero-info h1 {
+        font-size: 2.4rem; 
+    }
+
+    .single {
+        max-width: 80%; 
+    }
+
+    .hero-info p {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 420px) {
+    .single {
+        max-width: 60%; 
+    }
+
+    .hero-info {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+.about-artist {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding-bottom: 50px;
+    gap: 0;
+}
+
+.about-img {
+    max-width: 6%; 
+    height: auto;
+    margin-bottom: -30px;
+}
+
+.custom-line {
+    width: 50%;            
+    height: 2px;            
+    background-color: #333;
+    margin: 0;
+}   
+
+.big-text {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 1024px) {
+    .about-img {
+        max-width: 6%; 
+        height: auto;
+        margin-bottom: -20px;
+    }
+
+    .big-text {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 720px) {
+   
+    .about-img {
+        max-width: 10%; 
+        height: auto;
+        margin-bottom: -10px;
+    }
+
+    .big-text {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+   
+    .about-img {
+        max-width: 10%; 
+        height: auto;
+        margin-bottom: -5px;
+    }
+
+    .big-text {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+.container.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 30px;
+}
+
+.container.info {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.info h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.info p {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 170%;
+    width: 550px;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.info img {   
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    border-radius: 2%;
+    width: 70%;
+}
+
+
+.container.more {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.more h3 {
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.more p {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 170%;
+    width: 550px;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0;
+}
+
+
+
+
+
+@media (max-width: 1180px) {
+    .container.banner {
+        flex-direction: column; /* Переключение на столбец */
+        align-items: center; /* Центрирование блоков */
+    }
+
+    .container.info, 
+    .container.more {
+        align-items: center; /* Центрирование контента */
+        text-align: center; /* Текст выравнивается по центру */
+    }
+
+    .info img {
+        margin-top: 20px;
+        max-width: 300px; /* Уменьшаем изображение */
+    }
+
+    .info p, 
+    .more p {
+        font-size: 16px; /* Уменьшаем размер текста */
+    }
+}
+
+@media (max-width: 768px) {
+    .info h3, 
+    .more h3 {
+        font-size: 24px; /* Уменьшаем заголовки */
+    }
+
+    .info p, 
+    .more p {
+        font-size: 14px; /* Ещё меньше текст */
+    }
+}
+
+@media (max-width: 480px) {
+    .info img {
+        max-width: 250px; /* Ещё меньше изображение */
+    }
+
+    .info h3, 
+    .more h3 {
+        font-size: 20px; /* Уменьшаем заголовки */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background: rgb(0, 0, 0);
+    padding: 80px 0;
+}
+
+.blocks-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+}
+
+.mail {
+    text-align: left;
+    padding-left: 120px;
+}
+
+.mail p {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.cop {
+    text-align: center; 
+    flex-grow: 1; 
+    margin-left: -270px;
+}
+
+.cop h1 {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 200;
+}
+
+.contact-us {
+    font-weight: bold;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+}
+
+
