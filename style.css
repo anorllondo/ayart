@@ -109,7 +109,6 @@ img {
     position: relative;
 }
 
-
 header {
     padding: 30px 0;
 }
@@ -118,9 +117,7 @@ header {
     text-transform: uppercase;
     font-size: 29px;
     font-weight: 800;
-    
 }
-
 
 header nav {
     float: right;
@@ -141,13 +138,11 @@ header nav ul li:last-child {
     margin-right: 0; 
 }
 
-
 header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
 }
-
 
 header nav ul li.active::after {
     content: '';
@@ -156,54 +151,104 @@ header nav ul li.active::after {
     height: 5px;
     background: #c2af9b;
     border-radius: 10px;
-    margin-top: 5px;
+    margin-top: 2px;
 }
-
 
 header nav ul li:not(.active):not(.btn) a:hover {
     border-bottom: 5px solid #b9a494; 
 }
 
-
-    header nav ul li.btn a {
-        background: rgb(80, 74, 69);
-        padding: 9px 17px;
-        border-radius: 5px;
-        transition: all 500ms ease;
-    }
+header nav ul li.btn a {
+    background: rgb(80, 74, 69);
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
 
 header nav ul li.btn a:hover {
     background: #3f3932;
 }
 
+.nav-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
 
 @media (max-width: 1325px) {
     header nav ul {
         gap: 10px;
     }
- }
-
-@media (max-width: 1200px) {
-   header nav ul {
-        flex-direction: column; 
-        align-items: right;
-        padding-left: 40%;
-   }
-
-   header nav ul li.btn a {
-    background-color: transparent; 
-    border: none; 
-    padding: 0;
-    color: inherit; 
-    display: inline; 
-  }
 }
 
-@media (max-width: 500px) {
-   .music.artist {
-    font-size: 18px;
-   }
+@media (max-width: 1200px) {
+    .nav-toggle {
+        display: block; 
+        float: right;
+    }
 
+    header nav {
+        position: relative;
+    }
+
+    header nav ul {
+        display: none; 
+        flex-direction: column; 
+        position: absolute;
+        top: calc(100% + 30px); 
+        padding: 10px;
+        z-index: 1000;
+        box-sizing: border-box; 
+        left: -70px;
+    }
+
+    header nav ul.active {
+        display: flex; 
+
+        
+    }
+
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: right; 
+        width: 100%; 
+    }
+
+    header nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    header nav ul li.btn a {
+        background-color: transparent; 
+        border: none; 
+        padding: 0;
+        color: inherit; 
+        display: inline; 
+    }
+
+    header nav ul li.active {
+        display: none; 
+    }
+
+    header nav ul li.active::after {
+        background: none;
+    }
+
+    header nav ul li:not(.active):not(.btn) a:hover {
+        border-bottom: none; 
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .music.artist {
+        font-size: 18px;
+    }
 }
 
 
