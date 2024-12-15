@@ -329,7 +329,7 @@ header nav ul li.btn a:hover {
     }
 
     .single {
-        width: 40%;
+        width: 65%;
         max-width: 100%; 
         transform: translateY(0); 
     }
@@ -341,7 +341,7 @@ header nav ul li.btn a:hover {
     }
 
     .single {
-        width: 60%;
+        width: 70%;
         max-width: 100%; 
     }
 
@@ -352,7 +352,7 @@ header nav ul li.btn a:hover {
 
 @media (max-width: 500px) {
     .single {
-        width: 80%;
+        width: 90%;
         max-width: 100%; 
     }
 
@@ -428,30 +428,32 @@ header nav ul li.btn a:hover {
 
 @media (max-width: 769px) {
    
-    .about-img {
-        width: 8%;
-        max-width: 100%; 
-        height: auto;
-        margin-bottom: -10px;
+     .about-img {
+       display: none;
     }
 
     .big-text {
         font-size: 22px;
         text-align: center  ;
     }
+
+    .about-artist {
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 500px) {
    
-    .about-img {
-        width: 11%;
-        max-width: 100%; 
-        height: auto;
-        margin-bottom: -5px;
+     .about-img {
+       display: none;
     }
 
     .big-text {
         font-size: 18px;
+    }
+
+    .about-artist {
+        margin-top: 100px;
     }
 }
 
