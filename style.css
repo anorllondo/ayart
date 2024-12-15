@@ -329,7 +329,8 @@ header nav ul li.btn a:hover {
     }
 
     .single {
-        max-width: 50%; 
+        width: 40%;
+        max-width: 100%; 
         transform: translateY(0); 
     }
 }
@@ -340,7 +341,8 @@ header nav ul li.btn a:hover {
     }
 
     .single {
-        max-width: 60%; 
+        width: 60%;
+        max-width: 100%; 
     }
 
     .hero-info p {
@@ -350,7 +352,8 @@ header nav ul li.btn a:hover {
 
 @media (max-width: 500px) {
     .single {
-        max-width: 70%; 
+        width: 80%;
+        max-width: 100%; 
     }
 
     .hero-info h3 {
@@ -411,7 +414,8 @@ header nav ul li.btn a:hover {
     }
 
     .about-img {
-        max-width: 7%; 
+        width: 7%;
+        max-width: 100%; 
         height: auto;
         margin-bottom: -20px;
     }
@@ -425,7 +429,8 @@ header nav ul li.btn a:hover {
 @media (max-width: 769px) {
    
     .about-img {
-        max-width: 8%; 
+        width: 8%;
+        max-width: 100%; 
         height: auto;
         margin-bottom: -10px;
     }
@@ -436,10 +441,11 @@ header nav ul li.btn a:hover {
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
    
     .about-img {
-        max-width: 10%; 
+        width: 11%;
+        max-width: 100%; 
         height: auto;
         margin-bottom: -5px;
     }
