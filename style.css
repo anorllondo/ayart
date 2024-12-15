@@ -64,6 +64,37 @@ img {
 }
 
 
+@media (max-width: 1024px) {
+    .AYART {
+        font-size: 33px;
+    }
+
+    .s-toboy {
+        width: 100%;
+    }
+}
+
+@media (max-width: 769px) {
+    .AYART {
+        font-size: 32px;
+    }
+
+    .s-toboy {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .AYART {
+        font-size: 27px;
+    }
+
+    .s-toboy {
+        width: 100%;
+    }
+
+}
+
 
 
 
@@ -134,12 +165,12 @@ header nav ul li:not(.active):not(.btn) a:hover {
 }
 
 
-header nav ul li.btn a {
-    background: rgb(80, 74, 69);
-    padding: 9px 17px;
-    border-radius: 5px;
-    transition: all 500ms ease;
-}
+    header nav ul li.btn a {
+        background: rgb(80, 74, 69);
+        padding: 9px 17px;
+        border-radius: 5px;
+        transition: all 500ms ease;
+    }
 
 header nav ul li.btn a:hover {
     background: #3f3932;
@@ -155,10 +186,25 @@ header nav ul li.btn a:hover {
 @media (max-width: 1200px) {
    header nav ul {
         flex-direction: column; 
+        align-items: right;
+        padding-left: 40%;
    }
+
+   header nav ul li.btn a {
+    background-color: transparent; 
+    border: none; 
+    padding: 0;
+    color: inherit; 
+    display: inline; 
+  }
 }
 
+@media (max-width: 500px) {
+   .music.artist {
+    font-size: 18px;
+   }
 
+}
 
 
 
@@ -243,7 +289,7 @@ header nav ul li.btn a:hover {
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 769px) {
     .hero-info h1 {
         font-size: 2.4rem; 
     }
@@ -257,15 +303,25 @@ header nav ul li.btn a:hover {
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
     .single {
-        max-width: 60%; 
+        max-width: 70%; 
     }
 
-    .hero-info {
-        max-width: 100%;
-        text-align: center;
+    .hero-info h3 {
+       font-size: 17px;
     }
+    
+    .hero-info h2 {
+        font-size: 24px;
+    }
+    
+    .hero-info p {
+        text-align: center;
+        font-size: 13px;
+        width: 100%;
+    }
+
 }
 
 
@@ -321,7 +377,7 @@ header nav ul li.btn a:hover {
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 769px) {
    
     .about-img {
         max-width: 8%; 
@@ -397,6 +453,8 @@ header nav ul li.btn a:hover {
     display: flex;
     flex-direction: column; 
     align-items: flex-start;
+    margin-top: 180px;
+    
     
 }
 
@@ -450,7 +508,7 @@ header nav ul li.btn a:hover {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .container.banner {
         flex-direction: column; 
         align-items: center; 
@@ -474,7 +532,7 @@ header nav ul li.btn a:hover {
 
     .info p, 
     .more p {
-        font-size: 10px; 
+        font-size: 15px; 
         max-width: 100%;
         margin-right: 0;
     }
@@ -504,13 +562,13 @@ header nav ul li.btn a:hover {
 
     .info img {
         margin-top: 20px;
-        width: 70%;
+        width: 90%;
 
     }
 
     .info p, 
     .more p {
-        font-size: 10px; 
+        font-size: 14px; 
         width: 250px; ;
         margin-right: 0;
     }
@@ -532,12 +590,15 @@ footer {
 
 .blocks-container {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .mail {
+    flex: 0 0 auto;
     text-align: left;
+    padding-left: 4%;
 }
 
 .mail p {
@@ -548,13 +609,15 @@ footer {
 }
 
 .cop {
-    flex: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
 }
 
 
 
-.cop h2 {
+.cop h3 {
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     font-size: 35px;
@@ -575,16 +638,60 @@ footer {
 
 
 @media (max-width: 1180px) {
-   
+    .cop h3 {
+        font-size: 17px;
+      }
+    
+      .cop-text {
+        font-size: 15px;
+      }
+    
+    
+      .contact-us {
+        font-size: 12px;
+      }
+    
+      .mail p {
+        font-size: 10px;
+      }
 }
 
 @media (max-width: 768px) {
- 
+    .cop h3 {
+        font-size: 17px;
+    }
+    
+      .cop-text {
+        font-size: 14px;
+     }
+    
+    
+      .contact-us {
+        font-size: 10px;
+      }
+    
+      .mail p {
+        font-size: 8px;
+      }
 }
 
-@media (max-width: 610px) {
-  
+@media (max-width: 500px) {
+  .cop h3 {
+    font-size: 16px;
+  }
+
+  .cop-text {
+    font-size: 13px;
+  }
+
+
+  .contact-us {
+    font-size: 10px;
+  }
+
+  .mail p {
+    font-size: 9px;
+  }
    
 }
-
 
